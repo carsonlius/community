@@ -2,3 +2,409 @@
 2018/01/27 15:06:52 [warn] 22773#22773: *24424 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/5/02/0000001025 while reading upstream, client: 42.202.133.28, server: community.carsonlius.cn, request: "POST / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "111.231.226.51"
 2018/01/27 15:06:55 [warn] 22773#22773: *24430 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/6/02/0000001026 while reading upstream, client: 42.202.133.28, server: community.carsonlius.cn, request: "POST / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "111.231.226.51"
 2018/01/27 17:02:34 [warn] 22773#22773: *24440 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/7/02/0000001027 while reading upstream, client: 220.191.255.144, server: community.carsonlius.cn, request: "GET /manager/html HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "111.231.226.51   80    Open             :80"
+2018/01/29 19:22:22 [warn] 22773#22773: *24598 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/8/02/0000001028 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "rebuildlogin.carsonlius.cn"
+2018/01/29 19:22:27 [warn] 22773#22773: *24600 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/9/02/0000001029 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/29 19:23:26 [warn] 22773#22773: *24600 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/0/03/0000001030 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/29 19:25:27 [warn] 22773#22773: *24611 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/1/03/0000001031 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/29 19:26:06 [warn] 22773#22773: *24611 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/2/03/0000001032 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/29 19:26:38 [warn] 22773#22773: *24611 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/3/03/0000001033 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/29 19:26:42 [warn] 22773#22773: *24611 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/4/03/0000001034 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/29 19:27:10 [warn] 22773#22773: *24611 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/5/03/0000001035 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/29 19:29:25 [warn] 22773#22773: *24625 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/6/03/0000001036 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/29 19:29:27 [warn] 22773#22773: *24627 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/7/03/0000001037 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/30 20:58:13 [warn] 22773#22773: *25119 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/8/03/0000001038 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 09:41:46 [warn] 22773#22773: *25225 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/9/03/0000001039 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 09:47:03 [warn] 22773#22773: *25247 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/0/04/0000001040 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "rebuildlogin.carsonlius.cn"
+2018/01/31 09:56:15 [warn] 22773#22773: *25254 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/1/04/0000001041 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "rebuildlogin.carsonlius.cn"
+2018/01/31 10:45:31 [warn] 22773#22773: *25259 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/2/04/0000001042 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "rebuildlogin.carsonlius.cn"
+2018/01/31 11:07:33 [warn] 22773#22773: *25263 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/3/04/0000001043 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "rebuildlogin.carsonlius.cn"
+2018/01/31 11:18:00 [warn] 22773#22773: *25269 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/4/04/0000001044 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "rebuildlogin.carsonlius.cn"
+2018/01/31 11:31:29 [warn] 22773#22773: *25272 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/5/04/0000001045 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "rebuildlogin.carsonlius.cn"
+2018/01/31 12:06:06 [warn] 22773#22773: *25274 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/6/04/0000001046 while reading upstream, client: 123.249.76.52, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "111.231.226.51", referrer: "http://111.231.226.51:80"
+2018/01/31 12:30:52 [warn] 22773#22773: *25276 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/7/04/0000001047 while reading upstream, client: 111.67.198.161, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "111.231.226.51"
+2018/01/31 13:58:27 [warn] 22773#22773: *25278 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/8/04/0000001048 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "rebuildlogin.carsonlius.cn"
+2018/01/31 16:48:33 [warn] 22773#22773: *25280 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/9/04/0000001049 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "rebuildlogin.carsonlius.cn"
+2018/01/31 17:10:45 [warn] 22773#22773: *25282 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/0/05/0000001050 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "rebuildlogin.carsonlius.cn"
+2018/01/31 17:16:31 [warn] 22773#22773: *25284 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/1/05/0000001051 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "rebuildlogin.carsonlius.cn"
+2018/01/31 17:24:00 [warn] 22773#22773: *25286 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/2/05/0000001052 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "rebuildlogin.carsonlius.cn"
+2018/01/31 17:24:04 [warn] 22773#22773: *25289 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/3/05/0000001053 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:24:05 [warn] 22773#22773: *25288 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/4/05/0000001054 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:27:56 [warn] 22773#22773: *25294 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/5/05/0000001055 while reading upstream, client: 47.93.90.175, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "58.87.80.173:80"
+2018/01/31 17:28:08 [warn] 22773#22773: *25296 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/6/05/0000001056 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:28:33 [warn] 22773#22773: *25296 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/7/05/0000001057 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:28:35 [warn] 22773#22773: *25301 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/8/05/0000001058 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:29:03 [warn] 22773#22773: *25301 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/9/05/0000001059 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:29:17 [warn] 22773#22773: *25301 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/0/06/0000001060 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:30:35 [warn] 22773#22773: *25301 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/1/06/0000001061 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:30:41 [warn] 22773#22773: *25301 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/2/06/0000001062 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:30:56 [warn] 22773#22773: *25301 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/3/06/0000001063 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:31:04 [warn] 22773#22773: *25301 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/4/06/0000001064 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:44:49 [warn] 22773#22773: *25327 an upstream response is buffered to a temporary file /var/lib/nginx/fastcgi/5/06/0000001065 while reading upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:55:42 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:55:43 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:55:45 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:55:45 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:55:45 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:55:45 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:55:46 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:55:46 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:55:46 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:55:47 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:56:14 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:57:19 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:57:35 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:57:36 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:57:50 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:57:53 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:57:53 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:57:53 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:57:53 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:57:54 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:57:54 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:57:54 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:02 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:03 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:03 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:04 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:04 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:04 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:05 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:05 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:05 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:29 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:31 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:31 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:31 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:32 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:32 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:32 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:32 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:33 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:33 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:33 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:34 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:34 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:34 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
+2018/01/31 17:58:34 [error] 22773#22773: *25347 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home/ubuntu/common/community/vendor/larav" while reading response header from upstream, client: 106.37.212.73, server: community.carsonlius.cn, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php/php7.1-fpm.sock:", host: "community.carsonlius.cn"
