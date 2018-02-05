@@ -2,11 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Discuss;
 use Illuminate\Http\Request;
 
-class DiscussController extends Controller
+class UserController extends Controller
 {
+
+    public function register()
+    {
+        return view('users.register');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -41,22 +46,21 @@ class DiscussController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param Discuss $discussion
+     * @param  int  $id
      * @return \Illuminate\Http\Response
-     * @internal param Discuss $discuss
      */
-    public function show(Discuss $discussion)
+    public function show($id)
     {
-        return view('forum.show')->with(compact('discussion'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Discuss  $discuss
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Discuss $discuss)
+    public function edit($id)
     {
         //
     }
@@ -65,10 +69,10 @@ class DiscussController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Discuss  $discuss
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Discuss $discuss)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -76,10 +80,10 @@ class DiscussController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Discuss  $discuss
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Discuss $discuss)
+    public function destroy($id)
     {
         //
     }

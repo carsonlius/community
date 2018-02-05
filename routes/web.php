@@ -12,3 +12,9 @@
 */
 
 Route::get('/', 'PostController@index');
+
+Route::resource('/discussions', 'DiscussController');
+
+Route::get('/user/register', 'UserController@register');
+
+Route::post('/user/register', 'UserController@store');
