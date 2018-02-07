@@ -169,6 +169,7 @@ return [
          */
 
         Collective\Html\HtmlServiceProvider::class,
+        \Naux\Mail\SendCloudServiceProvider::class,
         /*
          * Application Service Providers...
          */

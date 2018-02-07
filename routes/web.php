@@ -20,3 +20,11 @@ Route::get('/user/register', 'UserController@register');
 Route::post('/user/register', 'UserController@store');
 
 Route::get('/verify/{confirm_code}', 'UserController@verifyEmail');
+
+
+Route::get('/mail', function(){
+    $user_obj = \App\User::find(43);
+    $obj_email = new \App\Mail\UserEmailVerify($user_obj);
+//    \Mail::to($user_obj->email)->queue($obj_email->onQueue('user_email_verify'));
+    return new \App\Mail\UserEmailVerify($user_obj);
+});

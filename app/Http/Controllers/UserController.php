@@ -51,8 +51,8 @@ class UserController extends Controller
         // subject view confirm_code email
         dump($object_user->toArray());
         dump($object_user->confirm_code);
-        $params = ['%name%' => [$object_user->name], '%route%' => ['verify/' . $object_user->confirm_code]];
-        (new SendCloud())->sendCloud($object_user, 'register', '用户激活账号邮件', $params);
+//        $params = ['%name%' => [$object_user->name], '%route%' => ['verify/' . $object_user->confirm_code]];
+//        (new SendCloud())->sendCloud($object_user, 'register', '用户激活账号邮件', $params);
 
         return redirect('/');
     }
