@@ -33,7 +33,7 @@ class User extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => '请填写昵称',
+            'name.required' => '请填写用户名',
             'name.min' => '昵称不可以低于最小的长度2',
             'name.max' => '昵称不可以高于最长长度10',
             'name.unique' => '昵称已经被占用，请重新填写',

@@ -5,7 +5,7 @@
             <div class="col-md-8 col-md-offset-2" role="main">
                 {!! Form::open(['url' => 'user/register', 'method'=>'post']) !!}
                 <div class="form-group">
-                    {!! Form::label('name', '昵称：') !!}
+                    {!! Form::label('name', '用户名：') !!}
                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
