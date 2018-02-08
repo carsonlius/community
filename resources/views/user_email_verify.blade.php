@@ -10,6 +10,3 @@
 Thanks,<br>
 {{ config('app.name') }}
 @endcomponent
-MAIL_DRIVER=sendcloud
-SEND_CLOUD_USER=   # 创建的 api_user
-SEND_CLOUD_KEY=    # 分配的 api_key
