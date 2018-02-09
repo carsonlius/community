@@ -1,0 +1,96 @@
+
+In Process.php line 1335:
+                                                                               
+  The process "'/usr/bin/php7.1' 'artisan' queue:work 'redis' --once --queue=  
+  'default' --delay=0 --memory=128 --sleep=3 --tries=3" exceeded the timeout   
+  of 60 seconds.                                                               
+                                                                               
+
+
+In Process.php line 1335:
+                                                                               
+  The process "'/usr/bin/php7.1' 'artisan' queue:work 'redis' --once --queue=  
+  'default' --delay=0 --memory=128 --sleep=3 --tries=3" exceeded the timeout   
+  of 60 seconds.                                                               
+                                                                               
+
+
+In Process.php line 1335:
+                                                                               
+  The process "'/usr/bin/php7.1' 'artisan' queue:work 'redis' --once --queue=  
+  'default' --delay=0 --memory=128 --sleep=3 --tries=3" exceeded the timeout   
+  of 60 seconds.                                                               
+                                                                               
+
+
+In Process.php line 1335:
+                                                                               
+  The process "'/usr/bin/php7.1' 'artisan' queue:work 'redis' --once --queue=  
+  'default' --delay=0 --memory=128 --sleep=3 --tries=3" exceeded the timeout   
+  of 60 seconds.                                                               
+                                                                               
+
+
+In Process.php line 1335:
+                                                                               
+  The process "'/usr/bin/php7.1' 'artisan' queue:work 'redis' --once --queue=  
+  'default' --delay=0 --memory=128 --sleep=3 --tries=3" exceeded the timeout   
+  of 60 seconds.                                                               
+                                                                               
+
+
+In Process.php line 1335:
+                                                                               
+  The process "'/usr/bin/php7.1' 'artisan' queue:work 'redis' --once --queue=  
+  'default' --delay=0 --memory=128 --sleep=3 --tries=3" exceeded the timeout   
+  of 60 seconds.                                                               
+                                                                               
+
+
+
+In Process.php line 1335:
+                                                                               
+  The process "'/usr/bin/php7.1' 'artisan' queue:work 'redis' --once --queue=  
+  'default' --delay=0 --memory=128 --sleep=3 --tries=3" exceeded the timeout   
+  of 60 seconds.                                                               
+                                                                               
+
+In Process.php line 1335:
+                                                                               
+  The process "'/usr/bin/php7.1' 'artisan' queue:work 'redis' --once --queue=  
+  'default' --delay=0 --memory=128 --sleep=3 --tries=3" exceeded the timeout   
+  of 60 seconds.                                                               
+                                                                               
+
+
+
+In Process.php line 1335:
+                                                                               
+  The process "'/usr/bin/php7.1' 'artisan' queue:work 'redis' --once --queue=  
+  'default' --delay=0 --memory=128 --sleep=3 --tries=3" exceeded the timeout   
+  of 60 seconds.                                                               
+                                                                               
+
+In Process.php line 1335:
+                                                                               
+  The process "'/usr/bin/php7.1' 'artisan' queue:work 'redis' --once --queue=  
+  'default' --delay=0 --memory=128 --sleep=3 --tries=3" exceeded the timeout   
+  of 60 seconds.                                                               
+                                                                               
+
+[2018-02-09 06:26:29] Processing: App\Mail\UserCreateMail
+PHP Fatal error:  Illuminate\Mail\SendQueuedMailable::handle(): The script tried to execute a method or access a property of an incomplete object. Please ensure that the class definition "App\Mail\UserCreateMail" of the object you are trying to operate on was loaded _before_ unserialize() gets called or provide a __autoload() function to load the class definition  in /home/ubuntu/common/community/vendor/laravel/framework/src/Illuminate/Mail/SendQueuedMailable.php on line 52
+
+In SendQueuedMailable.php line 52:
+                                                                               
+  Illuminate\Mail\SendQueuedMailable::handle(): The script tried to execute a  
+   method or access a property of an incomplete object. Please ensure that th  
+  e class definition "App\Mail\UserCreateMail" of the object you are trying t  
+  o operate on was loaded _before_ unserialize() gets called or provide a __a  
+  utoload() function to load the class definition                              
+                                                                               
+
+[2018-02-09 06:27:59] Processing: App\Mail\UserCreateMail
+[2018-02-09 06:28:01] Processed:  App\Mail\UserCreateMail
+[2018-02-09 06:29:45] Processing: App\Mail\UserCreateMail
+[2018-02-09 06:29:46] Processed:  App\Mail\UserCreateMail

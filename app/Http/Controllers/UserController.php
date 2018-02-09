@@ -43,17 +43,7 @@ class UserController extends Controller
     {
         $confirm_code = str_random(48);
         $params = $request->toArray() + ['avatar' => '/image/googlelogo_color_272x92dp.png', 'confirm_code' => $confirm_code];
-        unset($params['_token']);
-        unset($params['password_confirmation']);
-        $object_user = \App\User::forceCreate($params);
-
-        // send email
-        // subject view confirm_code email
-        dump($object_user->toArray());
-        dump($object_user->confirm_code);
-//        $params = ['%name%' => [$object_user->name], '%route%' => ['verify/' . $object_user->confirm_code]];
-//        (new SendCloud())->sendCloud($object_user, 'register', '用户激活账号邮件', $params);
-
+        \App\User::create($params);
         return redirect('/');
     }
 
@@ -102,6 +92,11 @@ class UserController extends Controller
         //
     }
 
+    /**
+     * verify email code
+     * @param $confirm_code
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function verifyEmail($confirm_code)
     {
         $obj_user = \App\User::where('confirm_code', $confirm_code)->first();
@@ -110,13 +105,18 @@ class UserController extends Controller
         }
         $obj_user->is_confirmed = 1;
 
-        // 确保原来的链接无效
+        // make old confirm_code disappear
         $obj_user->confirm_code = str_random(48);
         $obj_user->save();
 
         // 保存到下个http请求， 保存比较短期的消息（在login页面提示：你的邮箱已经验证,请登录）
         \Session::flash('email_confirm', '你的邮箱已经验证,请登录');
-
         return redirect('user/login');
     }
+
+    public function login()
+    {
+        return view('users.login');
+    }
+
 }

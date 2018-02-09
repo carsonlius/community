@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Discuss extends Model
 {
 
-    protected $fillable = ['user_id', 'last_user_id', 'body', 'title'];
+    protected $fillable = ['user_id', 'last_user_id', 'body', 'title', 'father'];
 
     public function user()
     {

@@ -10,10 +10,6 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-    protected $dispatchesEvents = [
-        'created' => UserEmailVerifyEvent::class
-    ];
-
     /**
      * The attributes that are mass assignable.
      *
@@ -21,12 +17,14 @@ class User extends Authenticatable
      */
 
     protected $fillable = [
-        'confirm_code', 'is_confirmed', 'name', 'email', 'password','avatar'
+        'is_confirmed', 'confirm_code','name', 'email','password','avatar'
     ];
 
-//    protected $guarded = ['id'];
+    protected $dispatchesEvents = [
+        'created' => UserEmailVerifyEvent::class
+    ];
 
-
+    protected $guarded = ['id'];
 
     /**
      * The attributes that should be hidden for arrays.
@@ -34,7 +32,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token'
     ];
 
     public function discussions()

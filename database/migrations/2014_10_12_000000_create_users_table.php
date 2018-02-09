@@ -15,8 +15,10 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('confirm_code', 64);
             $table->string('avatar');
             $table->string('name');
+            $table->integer('is_confirmed')->default(0)->comment('是否激活邮箱 1激活 0未激活');
             $table->string('email')->unique();
             $table->string('password');
             $table->rememberToken();
