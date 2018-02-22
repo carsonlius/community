@@ -112,7 +112,7 @@ class UserController extends Controller
 
         // 保存到下个http请求， 保存比较短期的消息（在login页面提示：你的邮箱已经验证,请登录）
         \Session::flash('email_confirm', '你的邮箱已经验证,请登录');
-        return redirect('user/login');
+        return redirect('/login');
     }
 
     public function login()
@@ -132,12 +132,12 @@ class UserController extends Controller
         }
 
         \Session::flash('user_login_failed', '密码不正确或者邮箱没有验证');
-        return redirect('user/login')->withInput();
+        return redirect('/login')->withInput();
     }
 
     public function logout()
     {
         \Auth::logout();
-        return redirect('user/login');
+        return redirect('/login');
     }
 }

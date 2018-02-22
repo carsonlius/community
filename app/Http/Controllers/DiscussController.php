@@ -3,18 +3,24 @@
 namespace App\Http\Controllers;
 
 use App\Discuss;
+use App\Http\Requests\DiscussRequest;
 use Illuminate\Http\Request;
 
 class DiscussController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth', ['only' => ['store', 'update', 'edit', 'create']]);
+    }
+
     /**
-     * Display a listing of the resource.
-     *
+     * Display a listing of the resource*
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        $discussions = Discuss::orderBy('id', 'desc')->paginate(15);
+        return view('discuss.index')->with(compact('discussions'));
     }
 
     /**
@@ -24,36 +30,37 @@ class DiscussController extends Controller
      */
     public function create()
     {
-        //
+        return view('discuss.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(DiscussRequest $request)
     {
-        //
+        $params = $request->toArray() + ['user_id' => \Auth::id(), 'last_user_id' => \Auth::id()];
+        $discussion = Discuss::create($params);
+        return redirect()->action('DiscussController@show', ['id' => $discussion->id]);
     }
 
     /**
      * Display the specified resource.
      *
-     * @param Discuss $discussion
+     * @param  \App\Discuss $discussion
      * @return \Illuminate\Http\Response
-     * @internal param Discuss $discuss
      */
     public function show(Discuss $discussion)
     {
-        return view('forum.show')->with(compact('discussion'));
+        return view('discuss.show')->with(compact('discussion'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Discuss  $discuss
+     * @param  \App\Discuss $discuss
      * @return \Illuminate\Http\Response
      */
     public function edit(Discuss $discuss)
@@ -64,8 +71,8 @@ class DiscussController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Discuss  $discuss
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Discuss $discuss
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Discuss $discuss)
@@ -76,7 +83,7 @@ class DiscussController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Discuss  $discuss
+     * @param  \App\Discuss $discuss
      * @return \Illuminate\Http\Response
      */
     public function destroy(Discuss $discuss)

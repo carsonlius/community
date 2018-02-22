@@ -11,21 +11,22 @@
 |
 */
 
-Route::get('/', 'PostController@index');
-
-Route::resource('/discussions', 'DiscussController');
-
+Route::get('/', 'DiscussController@index');
 
 Route::group(['prefix' => 'user'], function(){
     Route::get('/register', 'UserController@register');
     Route::get('/verify/{confirm_code}', 'UserController@verifyEmail');
-    Route::get('/login', 'UserController@login');
 
     Route::post('/register', 'UserController@store');
     Route::post('/sign', 'UserController@sign');
-    Route::post('/logout', 'UserController@logout');
 });
 
+// login logout
+Route::get('/login', 'UserController@login')->name('login');
+Route::post('/logout', 'UserController@logout')->name('logout');
+
+// discussion route
+Route::resource('/discussions', 'DiscussController');
 
 // show email result
 Route::get('/email_show', function(){
