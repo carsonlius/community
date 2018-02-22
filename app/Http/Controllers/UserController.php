@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\User;
+use App\Http\Requests\UserLoginRequest;
 use Illuminate\Http\Request;
 use App\SendCloud\SendCloud;
 
@@ -119,4 +120,24 @@ class UserController extends Controller
         return view('users.login');
     }
 
+    public function sign(UserLoginRequest $request)
+    {
+        $attempt = [
+            'email' => $request->get('email'),
+            'password' => $request->get('password'),
+            'is_confirmed' => 1
+        ];
+        if (\Auth::attempt($attempt)) {
+            return redirect('/');
+        }
+
+        \Session::flash('user_login_failed', '密码不正确或者邮箱没有验证');
+        return redirect('user/login')->withInput();
+    }
+
+    public function logout()
+    {
+        \Auth::logout();
+        return redirect('user/login');
+    }
 }

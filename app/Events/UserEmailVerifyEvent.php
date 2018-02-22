@@ -23,7 +23,6 @@ class UserEmailVerifyEvent
      */
     public function __construct(User $user)
     {
-        dump('eventing');
         $this->user = $user;
     }
 

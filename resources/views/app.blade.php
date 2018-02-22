@@ -67,8 +67,27 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="../navbar/">登录</a></li>
-                <li><a href="/user/register">注册</a></li>
+            @if(\Auth::check())
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="javascript:void(0);" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+                                <form id="logout-form" action="/user/logout" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+            @else
+                 <li><a href="/user/login">登录</a></li>
+                 <li><a href="/user/register">注册</a></li>
+            @endif
             </ul>
         </div><!--/.nav-collapse -->
     </div>

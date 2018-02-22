@@ -27,10 +27,6 @@ class UserEmailVerifyListener
      */
     public function handle(UserEmailVerifyEvent $event)
     {
-        dump('listening');
-//        $obj_email = new UserEmailVerify($event->user);
-        dump($event->user->toArray());
-
         \Mail::to($event->user->email)
             ->queue(new UserEmailVerify($event->user));
     }

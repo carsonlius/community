@@ -15,7 +15,6 @@ class PostController extends Controller
      */
     public function index()
     {
-//        $obj_user = User::where('id', '1')->first();
         $discussions = Discuss::all();
         return view('forum.index')->with(compact('discussions'));
     }
