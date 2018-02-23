@@ -52,7 +52,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse navbar" style="margin-bottom: 0px">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">首页</a></li>
+                <li class="active"><a href="/">首页</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -76,7 +76,7 @@
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="javascript:void(0);" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                                    Logout
+                                    退出登录
                                 </a>
                                 <form id="logout-form" action="/logout" method="POST" style="display: none;">
                                     {{ csrf_field() }}

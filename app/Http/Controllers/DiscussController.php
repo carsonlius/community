@@ -4,13 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Discuss;
 use App\Http\Requests\DiscussRequest;
+use App\Markdown\Markdown;
 use Illuminate\Http\Request;
 
 class DiscussController extends Controller
 {
-    public function __construct()
+    protected $markdown;
+
+    public function __construct(Markdown $markdown)
     {
         $this->middleware('auth', ['only' => ['store', 'update', 'edit', 'create']]);
+        $this->markdown = $markdown;
     }
 
     /**
@@ -54,7 +58,8 @@ class DiscussController extends Controller
      */
     public function show(Discuss $discussion)
     {
-        return view('discuss.show')->with(compact('discussion'));
+        $html = $this->markdown->markdown($discussion->body);
+        return view('discuss.show')->with(compact('discussion', 'html'));
     }
 
     /**

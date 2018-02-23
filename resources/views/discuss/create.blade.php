@@ -13,7 +13,7 @@
                     {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
                 </div>
                 <div class="form-group">
-                    {!! Form::submit('发布', ['class' => 'btn btn-info pull-right']) !!}
+                    {!! Form::submit('发布帖子', ['class' => 'btn btn-info pull-right']) !!}
                 </div>
                 {!! Form::close() !!}
             </div>

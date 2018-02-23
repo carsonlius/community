@@ -1,29 +1,19 @@
 @extends('app')
 @section('content')
     <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2" role="main">
-                {!! Form::model($discussion, ['url' => 'discussions', 'method'=>'post']) !!}
-                <div class="form-group">
-                    {!! Form::label('title', '标题：') !!}
-                    {!! Form::text('title', $discussion->title, ['class' => 'form-control']) !!}
-                </div>
-                <div class="form-group">
-                    {!! Form::label('body', '内容：') !!}
-                    {!! Form::textarea('body', $discussion->body, ['class' => 'form-control']) !!}
-                </div>
-                {!! Form::close() !!}
-            </div>
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <h2>欢迎来到laravel社区<a class="btn btn-lg btn-primary" style="float: right;" href="/discussions/create" role="button">发布新的帖子 &raquo;</a></h2>
         </div>
+    </div> <!-- /container -->
+
+    <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                @if($errors->any())
-                    <ul class="alert alert-danger">
-                        @foreach($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                @endif
+            <div class="col-md-9" role="main">
+                <h4 class="media-heading">Title: {{ $discussion->title }} </h4>
+                <div class="blog-post">
+                 {!! $html !!}
+                </div>
             </div>
         </div>
     </div>
