@@ -65,24 +65,30 @@ class DiscussController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Discuss $discuss
+     * @param  \App\Discuss $discussion
      * @return \Illuminate\Http\Response
      */
-    public function edit(Discuss $discuss)
+    public function edit(Discuss $discussion)
     {
-        //
+        // only the owner can go access this action
+        if (\Auth::check() && \Auth::id() != $discussion->user_id) {
+            \Session::flash('discussion_edit_failed', '<strong>Sorry：</strong>只有帖子的作者可以编辑帖子');
+            return redirect('/');
+        }
+        return view('discuss.edit')->with(compact('discussion'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @param  \App\Discuss $discuss
-     * @return \Illuminate\Http\Response
+     * @param DiscussRequest $request
+     * @param Discuss $discussion
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update(Request $request, Discuss $discuss)
+    public function update(DiscussRequest $request, Discuss $discussion)
     {
-        //
+        $discussion->update($request->toArray());
+        return redirect('discussions');
     }
 
     /**

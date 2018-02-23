@@ -3,9 +3,13 @@
     <div class="container">
         <!-- Main component for a primary marketing message or call to action -->
         <div class="jumbotron">
-            <h2>欢迎来到laravel社区
-                <a class="btn btn-lg btn-primary" style="float: right;" href="/discussions/create" role="button">发布新的帖子 &raquo;</a></h2>
+            <h2>欢迎来到laravel社区<a class="btn btn-lg btn-primary" style="float: right;" href="/discussions/create" role="button">发布新的帖子 &raquo;</a></h2>
         </div>
+        @if(\Session::has('discussion_edit_failed'))
+            <div class="alert alert-danger" role="alert">
+                {!!\Session::get('discussion_edit_failed') !!}
+            </div>
+        @endif
     </div> <!-- /container -->
 
     <div class="container">

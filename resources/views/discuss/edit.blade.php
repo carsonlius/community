@@ -3,8 +3,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2" role="main">
-                {!! Form::open(['url' => 'discussions', 'method'=>'post']) !!}
-                @include('discuss.form')
+                {!! Form::model($discussion, ['url' => '/discussions/'. $discussion->id, 'method'=>'PATCH']) !!}
+                    {!! Form::hidden('id', $discussion->id) !!}
+                    @include('discuss.form')
                 {!! Form::close() !!}
             </div>
         </div>

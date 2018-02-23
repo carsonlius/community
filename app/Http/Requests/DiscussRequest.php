@@ -23,8 +23,16 @@ class DiscussRequest extends FormRequest
      */
     public function rules()
     {
+        $route_name = \Request::route()->getName();
+        if ($route_name == 'discussions.create') {
+            return [
+                'title' => 'required|min:2|unique:discusses,title',
+                'body' => 'required|min:15'
+            ];
+        }
+        $id = request('id');
         return [
-            'title' => 'required|min:2|unique:discusses,title',
+            'title' => 'required|min:2|unique:discusses,title,' . $id,
             'body' => 'required|min:15'
         ];
     }

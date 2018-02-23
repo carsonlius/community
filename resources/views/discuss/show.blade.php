@@ -3,7 +3,11 @@
     <div class="container">
         <!-- Main component for a primary marketing message or call to action -->
         <div class="jumbotron">
-            <h2>欢迎来到laravel社区<a class="btn btn-lg btn-primary" style="float: right;" href="/discussions/create" role="button">发布新的帖子 &raquo;</a></h2>
+            <h2>欢迎来到laravel社区
+                @if(\Auth::check() && $discussion->user_id == \Auth::id())
+                    <a class="btn btn-lg btn-primary" style="float: right;" href="/discussions/{{ $discussion->id }}/edit" role="button">编辑帖子 &raquo;</a>
+                @endif
+            </h2>
         </div>
     </div> <!-- /container -->
 
