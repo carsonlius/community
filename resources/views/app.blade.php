@@ -13,8 +13,9 @@
     <title>欢迎来到laravel社区</title>
 
     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/style.css?v=1.07" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -68,22 +69,28 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
             @if(\Auth::check())
+                    <li style="">
+                        <img src="{{ \Auth::user()->avatar }}" style="width: 24px;height: 24px;margin-top: 50%" alt="">
+                    </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
                         <ul class="dropdown-menu">
+                            <li><a href="#"><i class="icon-user"></i> 更换头像</a></li>
+                            <li><a href="#"><i class="icon-lock"></i> 更换密码</a></li>
+                            <li><a href="#"><i class="icon-heart"></i> 特别感谢</a></li>
+                            <li role="separator" class="divider"></li>
                             <li>
-                                <a href="javascript:void(0);" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                                    退出登录
-                                </a>
+                                <a href="javascript:void(0);" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="icon-signout"></i> 退出登录</a>
                                 <form id="logout-form" action="/logout" method="POST" style="display: none;">
                                     {{ csrf_field() }}
                                 </form>
                             </li>
                         </ul>
                     </li>
+
             @else
                  <li><a href="/login">登录</a></li>
                  <li><a href="/user/register">注册</a></li>

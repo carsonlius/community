@@ -6,6 +6,9 @@
                 {!! Form::model($discussion, ['url' => '/discussions/'. $discussion->id, 'method'=>'PATCH']) !!}
                     {!! Form::hidden('id', $discussion->id) !!}
                     @include('discuss.form')
+                <div class="form-group">
+                    {!! Form::submit('更新帖子', ['class' => 'btn btn-info pull-right']) !!}
+                </div>
                 {!! Form::close() !!}
             </div>
         </div>

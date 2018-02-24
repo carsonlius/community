@@ -22,11 +22,22 @@
                                 <img src="{!! $discussion->user->avatar !!}" alt="64*64" style="width: 64px;height: 64px" class="media-object img-circle">
                             </a>
                         </div>
+
                         <div class="media-body">
-                            <a href="/discussions/{{ $discussion->id }}"><h4 class="media-heading">{{ $discussion->title }}</h4>
-                            </a>
+                            <h4 class="media-heading">
+                            <a href="/discussions/{{ $discussion->id }}">{{ $discussion->title }}</a>
+                            </h4>
                             {{ $discussion->user->name }}
+
+                            {{-- 回复详情 --}}
+                            <div class="media-conversation-meta">
+                                    <span class="media-conversation-replies">
+                                        <a href="">{{ count($discussion->comments) }}</a>
+                                        回复
+                                    </span>
+                            </div>
                         </div>
+
                     </div>
                 @endforeach
             </div>
