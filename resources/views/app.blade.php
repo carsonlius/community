@@ -89,6 +89,11 @@
                  <li><a href="/user/register">注册</a></li>
             @endif
             </ul>
+            {{-- 登录返回之前浏览的页面, --}}
+            @if (!\Auth::check() && strpos(\Request::getRequestUri(), 'discussions')!==false)
+                {!! \Session::put('redirect_url', \Request::getRequestUri()) !!}
+            @endif
+
         </div><!--/.nav-collapse -->
     </div>
 </nav>

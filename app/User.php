@@ -35,13 +35,19 @@ class User extends Authenticatable
         'password', 'remember_token'
     ];
 
+    // password 加密存入数据库
+    public function setPasswordAttribute($password)
+    {
+        $this->attributes['password'] = bcrypt($password);
+    }
+
     public function discussions()
     {
         return $this->hasMany(Discuss::class);
     }
 
-    public function setPasswordAttribute($password)
+    public function comments()
     {
-        $this->attributes['password'] = bcrypt($password);
+        $this->hasMany(Comment::class);
     }
 }

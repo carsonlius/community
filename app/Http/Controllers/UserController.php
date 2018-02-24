@@ -128,6 +128,12 @@ class UserController extends Controller
             'is_confirmed' => 1
         ];
         if (\Auth::attempt($attempt)) {
+            // 跳转到登陆之前的页面
+            if (\Session::has('redirect_url')) {
+                $redirect_url = \Session::get('redirect_url');
+                \Session::forget('redirect_url');
+                return redirect($redirect_url);
+            }
             return redirect('/');
         }
 

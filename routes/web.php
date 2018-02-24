@@ -17,6 +17,9 @@ Route::post('/logout', 'UserController@logout')->name('logout');
 // discussion route
 Route::resource('/discussions', 'DiscussController');
 
+// comments route
+Route::resource('/comments', 'CommentController');
+
 // show email result
 Route::get('/email_show', function(){
     $obj_user = \App\User::find(1);

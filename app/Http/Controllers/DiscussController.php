@@ -23,6 +23,7 @@ class DiscussController extends Controller
      */
     public function index()
     {
+        
         $discussions = Discuss::orderBy('id', 'desc')->paginate(15);
         return view('discuss.index')->with(compact('discussions'));
     }
