@@ -159,14 +159,38 @@ class UserController extends Controller
 
     public function storeAvatar(Request $request)
     {
+        // validator
+        $rules = [
+            'avatar' => [
+                'required',
+                'image'
+            ]
+        ];
+        $messages = [
+            'avatar.required' => '请上传头像',
+            'avatar.image' => '请上传正常格式的头像'
+        ];
+        $validator= \Validator::make($request->toArray(), $rules, $messages);
+        if ($validator->fails()) {
+            return \Response::json([
+                'success' => false,
+                'errors' => $validator->getMessageBag()->toArray()
+            ]);
+        }
+
+        // upload photo
         $file = $request->file('avatar');
         $destinationPath = 'uploads/';
         $filename = \Auth::id() . time() . $file->getClientOriginalName();
-
         $file->move($destinationPath, $filename);
-        Image::make($destinationPath . $filename)->fit(200)->save();
 
+        // adjust photo
+        Image::make($destinationPath . $filename)->fit(200)->save();
         \Auth::user()->update(['avatar' => '/' . $destinationPath . $filename]);
-        return redirect()->back();
+
+        return \Response::json([
+            'success' => true,
+            'avatar' => asset($destinationPath . $filename)
+        ]);
     }
 }
