@@ -170,6 +170,7 @@ return [
 
         Collective\Html\HtmlServiceProvider::class,
         \Naux\Mail\SendCloudServiceProvider::class,
+        \Intervention\Image\ImageServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -229,6 +230,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Html' => \Collective\Html\HtmlFacade::class,
         'Form' => \Collective\Html\FormFacade::class,
+        'Image' => \Intervention\Image\Facades\Image::class,
 
     ],
 

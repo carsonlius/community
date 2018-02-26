@@ -78,7 +78,7 @@
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li><a href="#"><i class="icon-user"></i> 更换头像</a></li>
+                            <li><a href="/user/showAvatar"><i class="icon-user"></i> 更换头像</a></li>
                             <li><a href="#"><i class="icon-lock"></i> 更换密码</a></li>
                             <li><a href="#"><i class="icon-heart"></i> 特别感谢</a></li>
                             <li role="separator" class="divider"></li>

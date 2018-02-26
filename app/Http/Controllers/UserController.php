@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\User;
 use App\Http\Requests\UserLoginRequest;
 use Illuminate\Http\Request;
-use App\SendCloud\SendCloud;
+use Intervention\Image\Facades\Image;
 
 class UserController extends Controller
 {
@@ -120,6 +120,11 @@ class UserController extends Controller
         return view('users.login');
     }
 
+    /**
+     * login
+     * @param UserLoginRequest $request
+     * @return $this|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
     public function sign(UserLoginRequest $request)
     {
         $attempt = [
@@ -145,5 +150,23 @@ class UserController extends Controller
     {
         \Auth::logout();
         return redirect('/login');
+    }
+
+    public function showAvatar()
+    {
+        return view('users.avatar');
+    }
+
+    public function storeAvatar(Request $request)
+    {
+        $file = $request->file('avatar');
+        $destinationPath = 'uploads/';
+        $filename = \Auth::id() . time() . $file->getClientOriginalName();
+
+        $file->move($destinationPath, $filename);
+        Image::make($destinationPath . $filename)->fit(200)->save();
+
+        \Auth::user()->update(['avatar' => '/' . $destinationPath . $filename]);
+        return redirect()->back();
     }
 }

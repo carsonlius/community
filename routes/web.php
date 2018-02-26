@@ -5,7 +5,9 @@ Route::get('/', 'DiscussController@index');
 Route::group(['prefix' => 'user'], function(){
     Route::get('/register', 'UserController@register');
     Route::get('/verify/{confirm_code}', 'UserController@verifyEmail');
+    Route::get('/showAvatar', 'UserController@showAvatar');
 
+    Route::post('/storeAvatar', 'UserController@storeAvatar');
     Route::post('/register', 'UserController@store');
     Route::post('/sign', 'UserController@sign');
 });
