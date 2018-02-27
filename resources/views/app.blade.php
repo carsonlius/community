@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/style.css?v=1.11" rel="stylesheet">
+    <link href="/css/jquery.Jcrop.min.css?v=1.01" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -25,6 +26,7 @@
     <script src="/js/ie-emulation-modes-warning.js"></script>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="/js/jquery.form.js?version=1.01"></script>
+    <script src="/js/jquery.Jcrop.min.js?version=1.01"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -72,7 +74,7 @@
             <ul class="nav navbar-nav navbar-right">
             @if(\Auth::check())
                     <li style="">
-                        <img src="{{ \Auth::user()->avatar }}" style="width: 24px;height: 24px;margin-top: 50%" alt="">
+                        <img src="{{ \Auth::user()->avatar }}" style="width: 24px;height: 24px;margin-top: 50%" alt="" id="avatar-login">
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">

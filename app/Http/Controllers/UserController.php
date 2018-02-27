@@ -170,7 +170,7 @@ class UserController extends Controller
             'avatar.required' => '请上传头像',
             'avatar.image' => '请上传正常格式的头像'
         ];
-        $validator= \Validator::make($request->toArray(), $rules, $messages);
+        $validator = \Validator::make($request->toArray(), $rules, $messages);
         if ($validator->fails()) {
             return \Response::json([
                 'success' => false,
@@ -181,16 +181,29 @@ class UserController extends Controller
         // upload photo
         $file = $request->file('avatar');
         $destinationPath = 'uploads/';
-        $filename = \Auth::id() . time() . $file->getClientOriginalName();
+        $filename = \Auth::id() . '_' . time() . $file->getClientOriginalName();
         $file->move($destinationPath, $filename);
 
         // adjust photo
-        Image::make($destinationPath . $filename)->fit(200)->save();
+        Image::make($destinationPath . $filename)->fit(400)->save();
         \Auth::user()->update(['avatar' => '/' . $destinationPath . $filename]);
 
         return \Response::json([
             'success' => true,
-            'avatar' => asset($destinationPath . $filename)
+            'avatar' => '/'. $destinationPath . $filename
         ]);
+    }
+
+    public function cropAvatar(Request $request)
+    {
+        // crop photo
+        $photo = substr($request->get('photo'),1);
+        $width = (int)$request->get('w');
+        $height = (int)$request->get('h');
+        $x = (int)$request->get('x');
+        $y = (int)$request->get('y');
+        \Image::make($photo)->crop($width, $height, $x, $y)->save();
+        // public Intervention\Image\Image crop(int $width, int $height, [int $x, int $y])
+        return redirect('/user/showAvatar');
     }
 }

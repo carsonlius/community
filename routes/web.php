@@ -27,3 +27,6 @@ Route::get('/email_show', function(){
     $obj_user = \App\User::find(1);
     return new \App\Mail\UserEmailVerify($obj_user);
 });
+
+// crop img
+Route::post('/crop/api', 'UserController@cropAvatar');
