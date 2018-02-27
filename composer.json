@@ -14,7 +14,9 @@
         "laravelcollective/html": "^5.5",
         "naux/sendcloud": "^1.1",
         "predis/predis": "^1.1",
-        "ultraware/roles": "^5.5"
+        "ultraware/roles": "^5.5",
+        "yuanchao/laravel-5-markdown-editor": "dev-master"
+
     },
     "require-dev": {
         "filp/whoops": "~2.0",

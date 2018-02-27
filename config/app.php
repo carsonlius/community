@@ -171,6 +171,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         \Naux\Mail\SendCloudServiceProvider::class,
         \Intervention\Image\ImageServiceProvider::class,
+        \YuanChao\Editor\EndaEditorServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -231,6 +232,7 @@ return [
         'Html' => \Collective\Html\HtmlFacade::class,
         'Form' => \Collective\Html\FormFacade::class,
         'Image' => \Intervention\Image\Facades\Image::class,
+        'EndaEditor' => \YuanChao\Editor\Facade\EndaEditorFacade::class,
 
     ],
 

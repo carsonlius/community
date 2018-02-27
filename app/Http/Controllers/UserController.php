@@ -203,7 +203,6 @@ class UserController extends Controller
         $x = (int)$request->get('x');
         $y = (int)$request->get('y');
         \Image::make($photo)->crop($width, $height, $x, $y)->save();
-        // public Intervention\Image\Image crop(int $width, int $height, [int $x, int $y])
         return redirect('/user/showAvatar');
     }
 }

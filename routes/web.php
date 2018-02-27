@@ -18,6 +18,7 @@ Route::post('/logout', 'UserController@logout')->name('logout');
 
 // discussion route
 Route::resource('/discussions', 'DiscussController');
+Route::post('discussions/editFile', 'DiscussController@editFile');
 
 // comments route
 Route::resource('/comments', 'CommentController');

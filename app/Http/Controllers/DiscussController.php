@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Discuss;
 use App\Http\Requests\DiscussRequest;
 use App\Markdown\Markdown;
-use Illuminate\Http\Request;
+use YuanChao\Editor\Facade\EndaEditorFacade;
 
 class DiscussController extends Controller
 {
@@ -23,7 +23,7 @@ class DiscussController extends Controller
      */
     public function index()
     {
-        
+
         $discussions = Discuss::orderBy('id', 'desc')->paginate(15);
         return view('discuss.index')->with(compact('discussions'));
     }
@@ -101,5 +101,11 @@ class DiscussController extends Controller
     public function destroy(Discuss $discuss)
     {
         //
+    }
+
+    public function editFile()
+    {
+        $data = EndaEditorFacade::uploadImgFile('uploads');
+        return json_encode($data);
     }
 }
