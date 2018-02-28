@@ -23,7 +23,6 @@ class DiscussController extends Controller
      */
     public function index()
     {
-
         $discussions = Discuss::orderBy('id', 'desc')->paginate(15);
         return view('discuss.index')->with(compact('discussions'));
     }
@@ -103,9 +102,31 @@ class DiscussController extends Controller
         //
     }
 
+    // 整合markdown编辑器的
     public function editFile()
     {
         $data = EndaEditorFacade::uploadImgFile('uploads');
         return json_encode($data);
+    }
+
+    public function En()
+    {
+        $pre = 0;
+        $next = 1;
+
+        while ($pre <= 100) {
+            echo $pre . PHP_EOL;
+
+            $third = $pre + $next;
+            $pre = $next;
+            $next = $third;
+        }
+
+        return view('discuss.en');
+    }
+
+    public function getFib($n)
+    {
+        return round(pow((sqrt(5)+1)/2, $n) / sqrt(5));
     }
 }

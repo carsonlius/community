@@ -27,7 +27,12 @@
                             <h4 class="media-heading">
                             <a href="/discussions/{{ $discussion->id }}">{{ $discussion->title }}</a>
                             </h4>
-                            {{ $discussion->user->name }}
+                            <span style="color:gray">
+                                <span class="username">{{ $discussion->user->name }} 发表于</span><time pubdate="true">{!! $discussion->created_at->diffForHumans() !!}</time>
+                                &nbsp;<i class="icon-reply"></i>
+                                <span class="username"><i class="icon fa fa-fw fa-reply "></i>{!! $discussion->lastUser->name !!}</span>
+                                <time pubdate="true" data-humantime="true">{!! $discussion->lastUser->updated_at->diffForHumans() !!}更新</time>
+                            </span>
 
                             {{-- 回复详情 --}}
                             <div class="media-conversation-meta">

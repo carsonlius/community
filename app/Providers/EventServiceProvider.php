@@ -16,6 +16,9 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\UserEmailVerifyEvent' => [
             'App\Listeners\UserEmailVerifyListener',
         ],
+        'App\Events\CommentCreateEvent' => [
+            'App\Listeners\CommentCreateListener'
+        ]
     ];
 
     /**

@@ -18,7 +18,10 @@ Route::post('/logout', 'UserController@logout')->name('logout');
 
 // discussion route
 Route::resource('/discussions', 'DiscussController');
-Route::post('discussions/editFile', 'DiscussController@editFile');
+Route::post('/discussions/editFile', 'DiscussController@editFile');
+
+// english chinese
+Route::get('En', 'DiscussController@En');
 
 // comments route
 Route::resource('/comments', 'CommentController');
