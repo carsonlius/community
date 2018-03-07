@@ -14,12 +14,27 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9" role="main">
-                <h4 class="media-heading">Title: {{ $discussion->title }} </h4>
+                {{-- discussion begin --}}
+                <h3 class="media-heading" style="font-weight: bold">{{ $discussion->title }} </h3>
+                <div class="media">
+                    <div class="media-left">
+                        <img src="{{ $discussion->user->avatar }}" alt="" style="width:64px;height:64px" class="media-object">
+                    </div>
+                    <div class="media-body">
+                        <div class="media-heading">
+                            {!! $discussion->user->name !!}
+                            发表于{!! $discussion->user->created_at->diffForHumans() !!}<span></span>
+                            <a href="javascript:void(0);" onclick="favoriteStore($(this))" discuss_id="{!! $discussion->id !!}"><i class="icon-heart-empty"></i></a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="blog-post">
                  {!! $html !!}
                 </div>
+                {{-- discussion ending --}}
                 <hr>
-                {{-- discussion --}}
+                {{-- comment --}}
                 <?php $comments=$discussion->comments()->paginate(10); ?>
                 @foreach($comments as $comment)
                     <div class="media">
@@ -70,4 +85,20 @@
                 {{ $comments->links() }}
             </div>
     </div>
+    </div>
+
+    {{--<script>--}}
+
+    {{--</script>--}}
+    <script  type="text/javascript">
+        function favoriteStore(that) {
+            console.log('hello world');
+            var discuss_id = that.attr('discuss_id');
+            var url = '/favorite/store';
+            $.get(url, {discuss_id : discuss_id}).success(function (response) {
+                console.log(response);
+
+            });
+        }
+    </script>
 @endsection

@@ -50,4 +50,9 @@ class User extends Authenticatable
     {
         $this->hasMany(Comment::class);
     }
+
+    public function favorites()
+    {
+        $this->hasMany(Favorite::class);
+    }
 }

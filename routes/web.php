@@ -20,6 +20,9 @@ Route::post('/logout', 'UserController@logout')->name('logout');
 Route::resource('/discussions', 'DiscussController');
 Route::post('/discussions/editFile', 'DiscussController@editFile');
 
+// favorite discussion
+Route::get('/favorite/store', 'FavoriteController@store');
+
 // english chinese
 Route::get('En', 'DiscussController@En');
 

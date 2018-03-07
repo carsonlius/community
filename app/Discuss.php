@@ -23,4 +23,9 @@ class Discuss extends Model
     {
         return $this->hasMany(Comment::class, 'discussion_id');
     }
+
+    public function favorites()
+    {
+        $this->hasMany(Favorite::class);
+    }
 }
