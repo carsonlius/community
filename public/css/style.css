@@ -80,3 +80,10 @@
     margin-top: 30px;
     z-index: 3;
 }
+
+.favorited,not_favorited:hover {
+    color:red;
+}
+.not_favorited, .favorited:hover {
+    color:#000
+}

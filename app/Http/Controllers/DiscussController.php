@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Discuss;
+use App\Favorite;
 use App\Http\Requests\DiscussRequest;
 use App\Markdown\Markdown;
 use YuanChao\Editor\Facade\EndaEditorFacade;
@@ -58,8 +59,12 @@ class DiscussController extends Controller
      */
     public function show(Discuss $discussion)
     {
+        $favorites = [];
+        if (\Auth::check()) {
+            $favorites = Favorite::where('user_id', \Auth::id())->pluck('discuss_id')->all();
+        }
         $html = $this->markdown->markdown($discussion->body);
-        return view('discuss.show')->with(compact('discussion', 'html'));
+        return view('discuss.show')->with(compact('discussion', 'html', 'favorites'));
     }
 
     /**

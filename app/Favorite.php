@@ -10,11 +10,11 @@ class Favorite extends Model
 
     public function user()
     {
-        $this->belongsToMany(User::class);
+        return $this->belongsToMany(User::class);
     }
 
     public function discussions()
     {
-        $this->belongsToMany(Discuss::class);
+        return $this->belongsToMany(Discuss::class);
     }
 }

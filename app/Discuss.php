@@ -26,6 +26,6 @@ class Discuss extends Model
 
     public function favorites()
     {
-        $this->hasMany(Favorite::class);
+        return $this->belongsToMany(Favorite::class, 'favorites', 'discuss_id', 'user_id')->withTimestamps();
     }
 }

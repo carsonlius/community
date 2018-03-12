@@ -21,7 +21,8 @@ Route::resource('/discussions', 'DiscussController');
 Route::post('/discussions/editFile', 'DiscussController@editFile');
 
 // favorite discussion
-Route::get('/favorite/store', 'FavoriteController@store');
+//Route::post('/favorite/store', 'FavoriteController@store');
+Route::resource('/favorite', 'FavoriteController');
 
 // english chinese
 Route::get('En', 'DiscussController@En');

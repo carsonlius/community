@@ -24,7 +24,20 @@
                         <div class="media-heading">
                             {!! $discussion->user->name !!}
                             发表于{!! $discussion->user->created_at->diffForHumans() !!}<span></span>
-                            <a href="javascript:void(0);" onclick="favoriteStore($(this))" discuss_id="{!! $discussion->id !!}"><i class="icon-heart-empty"></i></a>
+                            @if (\Auth::check())
+                            <div style="display: none">
+                                {!! Form::open(['url' => '/favorite/' . $discussion->id, 'method'=>'DELETE', 'id' => 'favorite_del']) !!}
+                                    {!! Form::hidden('discuss_id', $discussion->id) !!}
+                                {!! Form::close() !!}
+
+                                {!! Form::open(['url' => '/favorite', 'method'=>'POST', 'id' => 'favorite_store']) !!}
+                                    {!! Form::hidden('discuss_id', $discussion->id) !!}
+                                {!! Form::close() !!}
+                            </div>
+                            <a href="javascript:void(0);" id="favorite">
+                                <i class="<?= in_array($discussion->id, $favorites) ? 'icon-heart' : 'icon-heart-empty' ?>"></i>
+                            </a>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -91,14 +104,52 @@
 
     {{--</script>--}}
     <script  type="text/javascript">
-        function favoriteStore(that) {
-            console.log('hello world');
-            var discuss_id = that.attr('discuss_id');
-            var url = '/favorite/store';
-            $.get(url, {discuss_id : discuss_id}).success(function (response) {
-                console.log(response);
 
+
+        $(function(){
+            var favorite = $('#favorite');
+
+            // 收藏或者不收藏
+            favorite.click(function(){
+                var options = {
+                    success : favoriteResponse
+                };
+
+                var favorite_class = $('#favorite').children('i').attr('class');
+                if ( favorite_class === 'icon-heart-empty') {
+                    $('#favorite_store').ajaxForm(options).submit();
+                } else {
+                    $('#favorite_del').ajaxForm(options).submit();
+                }
             });
-        }
+
+
+
+            function favoriteResponse(response) {
+                var favorite_class = $('#favorite').children('i').attr('class');
+
+                if (response.success) {
+                    // 收藏
+                    if (favorite_class === 'icon-heart-empty') {
+                        $('a .icon-heart-empty').attr('class', 'icon-heart');
+                    } else {
+                    // 取消收藏
+                        $('a .icon-heart').attr('class', 'icon-heart-empty');
+                    }
+                } else {
+                    console.log(response.errors);
+                }
+            }
+
+            // 提示
+            favorite.mouseenter(function(){
+                var class_sel = $(this).children('i').attr('class');
+                if (class_sel === 'icon-heart-empty') {
+
+                } else {
+
+                }
+            });
+        });
     </script>
 @endsection

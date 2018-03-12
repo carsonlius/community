@@ -48,11 +48,12 @@ class User extends Authenticatable
 
     public function comments()
     {
-        $this->hasMany(Comment::class);
+       return $this->hasMany(Comment::class);
     }
 
+    // 收藏起来的帖子 多对多
     public function favorites()
     {
-        $this->hasMany(Favorite::class);
+       return $this->belongsToMany(Favorite::class, 'favorites', 'user_id', 'discuss_id')->withTimestamps();
     }
 }

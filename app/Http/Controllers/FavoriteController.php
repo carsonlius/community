@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class FavoriteController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth', ['only' => 'store,destroy']);
+    }
 
     /**
      * Display a listing of the resource.
@@ -36,22 +40,7 @@ class FavoriteController extends Controller
      */
     public function store(Request $request)
     {
-
-        // validator
-        $rules = ['discuss_id' => ['required']];
-        $messages = ['discuss_id.required' => 'Sorry,加入收藏失败'];
-        $params = $request->toArray();
-
-        $validator = \Validator::make($params, $rules, $messages);
-        if ($validator->fails()) {
-            $response = [
-                'success' => false,
-                'errors' => $validator->getMessageBag()->toArray()
-            ];
-            return \Response::json($response);
-        }
-        $params['user_id'] = \Auth::id();
-        Favorite::create($params);
+        \Auth::user()->favorites()->attach($request->get('discuss_id'));
         return \Response::json(['success' => true]);
     }
 
@@ -95,8 +84,10 @@ class FavoriteController extends Controller
      * @param  \App\Favorite  $favorite
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Favorite $favorite)
+    public function destroy(Request $request)
     {
-        //
+        $discuss_id = $request->get('discuss_id');
+        \Auth::user()->favorites()->detach($discuss_id);
+        return \Response::json(['success' => true]);
     }
 }

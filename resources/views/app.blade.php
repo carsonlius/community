@@ -15,7 +15,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css?v=1.11" rel="stylesheet">
+    <link href="/css/style.css?v=1.13" rel="stylesheet">
     <link href="/css/jquery.Jcrop.min.css?v=1.01" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
