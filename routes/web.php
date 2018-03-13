@@ -45,6 +45,9 @@ Route::get('/github/login', 'UserController@githubLogin');
 Route::get('/github/callback', 'UserController@githubCallback');
 
 Route::get('/test', function(){
+    $social_id = '1111';
+    $social_type = 'hello world';
+    dd(compact('social_id', 'social_type'));
     dump(config());
     dd(config('app'));
 });

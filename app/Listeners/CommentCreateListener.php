@@ -30,8 +30,7 @@ class CommentCreateListener
         // discussion 操作者的user_id
         $last_user_id = $event->comment->user_id;
         $discussion_id = $event->comment->discussion_id;
-        $discussion = Discuss::find($discussion_id);
-        $discussion->last_user_id = $last_user_id;
-        $discussion->save();
+        $updated_at = date('Y-m-d H:i:s');
+        Discuss::where(['id' => $discussion_id])->update(compact('last_user_id','updated_at'));
     }
 }

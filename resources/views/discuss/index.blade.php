@@ -22,7 +22,6 @@
                                 <img src="{!! $discussion->user->avatar !!}" alt="64*64" style="width: 64px;height: 64px" class="media-object img-circle">
                             </a>
                         </div>
-
                         <div class="media-body">
                             <h4 class="media-heading">
                             <a href="/discussions/{{ $discussion->id }}">{{ $discussion->title }}</a>
@@ -31,7 +30,7 @@
                                 <span class="username">{{ $discussion->user->name }} 发表于</span><time pubdate="true">{!! $discussion->created_at->diffForHumans() !!}</time>
                                 &nbsp;<i class="icon-reply"></i>
                                 <span class="username"><i class="icon fa fa-fw fa-reply "></i>{!! $discussion->lastUser->name !!}</span>
-                                <time pubdate="true" data-humantime="true">{!! $discussion->lastUser->updated_at->diffForHumans() !!}更新</time>
+                                <time pubdate="true" data-humantime="true">{!! $discussion->updated_at->diffForHumans() !!}更新</time>
                             </span>
 
                             {{-- 回复详情 --}}

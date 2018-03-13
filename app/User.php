@@ -17,7 +17,7 @@ class User extends Authenticatable
      */
 
     protected $fillable = [
-        'is_confirmed', 'confirm_code','name', 'email','password','avatar'
+        'is_confirmed', 'confirm_code', 'name', 'email', 'password', 'avatar', 'social_id', 'social_type'
     ];
 
     protected $dispatchesEvents = [
@@ -48,12 +48,12 @@ class User extends Authenticatable
 
     public function comments()
     {
-       return $this->hasMany(Comment::class);
+        return $this->hasMany(Comment::class);
     }
 
     // 收藏起来的帖子 多对多
     public function favorites()
     {
-       return $this->belongsToMany(Favorite::class, 'favorites', 'user_id', 'discuss_id')->withTimestamps();
+        return $this->belongsToMany(Favorite::class, 'favorites', 'user_id', 'discuss_id')->withTimestamps();
     }
 }

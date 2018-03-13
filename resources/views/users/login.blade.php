@@ -13,6 +13,7 @@
                     {!! Form::password('password', ['class'=> 'form-control']) !!}
                 </div>
                 <div class="form-group">
+                    <a href="https://www.codecasts.com/password/reset" class="text-muted">忘 记 密 码?</a>
                     {!! Form::submit('登录', ['class' => 'form-control btn btn-info']) !!}
                 </div>
                 {!! Form::close() !!}

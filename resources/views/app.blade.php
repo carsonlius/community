@@ -11,6 +11,10 @@
     {{--<link rel="icon" href="../../favicon.ico">--}}
     <link rel="shortcut icon" href="/uploads/41_1520840055原始.jpg" />
 
+    {{-- 一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等  --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
     <title>欢迎来到laravel社区</title>
 
     <!-- Bootstrap core CSS -->

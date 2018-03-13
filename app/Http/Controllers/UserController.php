@@ -223,27 +223,31 @@ class UserController extends Controller
      */
     public function githubCallback()
     {
-        // 获取认证的数据
-//        dump(config('services'));
+        // oauth
         $socialite = new SocialiteManager(config('services'));
         $user = $socialite->driver('github')->user();
-        $email = $user->getEmail();
 
-        $web_user = \App\User::where(['email' => $email])->first();
+        // register for the first time or not base on social_type and social
+        $social_type = strtolower($user->getProviderName());
+        $social_id = $user->getId();
+
+        $web_user = \App\User::where(compact('social_id', 'social_type'))->first();
         if (!$web_user) {
-            // 如果还没有入库 则先入库
+            // register data
             $params = [
                 'name' => $user->getNickname(),
                 'email' => $user->getEmail(),
                 'password' => bcrypt(str_random(16)),
                 'confirm_code' => bcrypt(str_random(32)),
                 'avatar' => $user->getAvatar(),
-                'is_confirmed' => 1
+                'is_confirmed' => 1,
+                'social_id' => $social_id,
+                'social_type' => $social_type
             ];
             $web_user = \App\User::create($params);
         }
 
-        // 登录
+        // login
         \Auth::login($web_user);
         // 跳转到登陆之前的页面
         if (\Session::has('redirect_url')) {
