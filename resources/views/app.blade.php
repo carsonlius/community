@@ -9,6 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     {{--<link rel="icon" href="../../favicon.ico">--}}
+    <link rel="shortcut icon" href="/uploads/41_1520840055原始.jpg" />
 
     <title>欢迎来到laravel社区</title>
 

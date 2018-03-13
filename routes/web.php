@@ -12,9 +12,6 @@ Route::group(['prefix' => 'user'], function(){
     Route::post('/sign', 'UserController@sign');
 });
 
-// login logout
-Route::get('/login', 'UserController@login')->name('login');
-Route::post('/logout', 'UserController@logout')->name('logout');
 
 // discussion route
 Route::resource('/discussions', 'DiscussController');
@@ -38,3 +35,16 @@ Route::get('/email_show', function(){
 
 // crop img
 Route::post('/crop/api', 'UserController@cropAvatar');
+
+// login logout
+Route::get('/login', 'UserController@login')->name('login');
+Route::post('/logout', 'UserController@logout')->name('logout');
+
+// github登录
+Route::get('/github/login', 'UserController@githubLogin');
+Route::get('/github/callback', 'UserController@githubCallback');
+
+Route::get('/test', function(){
+    dump(config());
+    dd(config('app'));
+});

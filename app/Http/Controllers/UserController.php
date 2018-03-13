@@ -7,10 +7,10 @@ use App\Http\Requests\UserLoginRequest;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
+use Overtrue\Socialite\SocialiteManager;
 
 class UserController extends Controller
 {
-
     public function register()
     {
         return view('users.register');
@@ -118,6 +118,7 @@ class UserController extends Controller
 
     public function login()
     {
+
         return view('users.login');
     }
 
@@ -191,19 +192,65 @@ class UserController extends Controller
 
         return \Response::json([
             'success' => true,
-            'avatar' => '/'. $destinationPath . $filename
+            'avatar' => '/' . $destinationPath . $filename
         ]);
     }
 
     public function cropAvatar(Request $request)
     {
         // crop photo
-        $photo = substr($request->get('photo'),1);
+        $photo = substr($request->get('photo'), 1);
         $width = (int)$request->get('w');
         $height = (int)$request->get('h');
         $x = (int)$request->get('x');
         $y = (int)$request->get('y');
         \Image::make($photo)->crop($width, $height, $x, $y)->save();
         return redirect('/user/showAvatar');
+    }
+
+    /**
+     * github 跳转认证的入口
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     */
+    public function githubLogin()
+    {
+        $socialite = new SocialiteManager(config('services'));
+        return $socialite->driver('github')->redirect();
+    }
+
+    /**
+     * github callback
+     */
+    public function githubCallback()
+    {
+        // 获取认证的数据
+//        dump(config('services'));
+        $socialite = new SocialiteManager(config('services'));
+        $user = $socialite->driver('github')->user();
+        $email = $user->getEmail();
+
+        $web_user = \App\User::where(['email' => $email])->first();
+        if (!$web_user) {
+            // 如果还没有入库 则先入库
+            $params = [
+                'name' => $user->getNickname(),
+                'email' => $user->getEmail(),
+                'password' => bcrypt(str_random(16)),
+                'confirm_code' => bcrypt(str_random(32)),
+                'avatar' => $user->getAvatar(),
+                'is_confirmed' => 1
+            ];
+            $web_user = \App\User::create($params);
+        }
+
+        // 登录
+        \Auth::login($web_user);
+        // 跳转到登陆之前的页面
+        if (\Session::has('redirect_url')) {
+            $redirect_url = \Session::get('redirect_url');
+            \Session::forget('redirect_url');
+            return redirect($redirect_url);
+        }
+        return redirect('/');
     }
 }

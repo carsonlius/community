@@ -123,8 +123,6 @@
                 }
             });
 
-
-
             function favoriteResponse(response) {
                 var favorite_class = $('#favorite').children('i').attr('class');
 

@@ -16,6 +16,7 @@
                     {!! Form::submit('登录', ['class' => 'form-control btn btn-info']) !!}
                 </div>
                 {!! Form::close() !!}
+                @include('users.third_login')
             </div>
         </div>
         <div class="row">
