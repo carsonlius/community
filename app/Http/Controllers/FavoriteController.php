@@ -40,7 +40,7 @@ class FavoriteController extends Controller
      */
     public function store(Request $request)
     {
-        \Auth::user()->favorites()->attach($request->get('discuss_id'));
+        \Auth::user()->loveFavorites()->attach($request->get('discuss_id'));
         return \Response::json(['success' => true]);
     }
 
@@ -87,7 +87,7 @@ class FavoriteController extends Controller
     public function destroy(Request $request)
     {
         $discuss_id = $request->get('discuss_id');
-        \Auth::user()->favorites()->detach($discuss_id);
+        \Auth::user()->loveFavorites()->detach($discuss_id);
         return \Response::json(['success' => true]);
     }
 }

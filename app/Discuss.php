@@ -24,8 +24,15 @@ class Discuss extends Model
         return $this->hasMany(Comment::class, 'discussion_id');
     }
 
+    // 用户收藏 非正式的多对多
     public function favorites()
     {
         return $this->belongsToMany(Favorite::class, 'favorites', 'discuss_id', 'user_id')->withTimestamps();
+    }
+
+    //
+    public function users()
+    {
+        return $this->belongsToMany(User::class, 'favorites', 'discuss_id', 'user_id')->withTimestamps();
     }
 }

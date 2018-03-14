@@ -51,9 +51,15 @@ class User extends Authenticatable
         return $this->hasMany(Comment::class);
     }
 
-    // 收藏起来的帖子 多对多
+    // 收藏起来的帖子 多对多 这种写法是不对的 (Favorite::class是不进行操作的 只是用来存储)
     public function favorites()
     {
         return $this->belongsToMany(Favorite::class, 'favorites', 'user_id', 'discuss_id')->withTimestamps();
+    }
+
+    // 收藏的帖子 多对多
+    public function loveFavorites()
+    {
+        return $this->belongsToMany(Discuss::class, 'favorites', 'user_id', 'discuss_id')->withTimestamps();
     }
 }

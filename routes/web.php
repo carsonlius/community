@@ -45,9 +45,16 @@ Route::get('/github/login', 'UserController@githubLogin');
 Route::get('/github/callback', 'UserController@githubCallback');
 
 Route::get('/test', function(){
-    $social_id = '1111';
-    $social_type = 'hello world';
-    dd(compact('social_id', 'social_type'));
-    dump(config());
-    dd(config('app'));
+//    $obj_discussion = \App\Discuss::find(44);
+//    dd($obj_discussion->users->toArray());
+
+
+//    $result= $obj_discussion->users()->detach(3);
+//    dump($result);
+    \App\User::find(50)->loveFavorites()->detach(42);
+
+
+    $result = \App\User::find(50)->loveFavorites;
+    dump($result->first()->toArray());
+
 });
