@@ -2,7 +2,7 @@
 
 Route::get('/', 'DiscussController@index');
 
-Route::group(['prefix' => 'user'], function(){
+Route::group(['prefix' => 'user'], function () {
     Route::get('/register', 'UserController@register');
     Route::get('/verify/{confirm_code}', 'UserController@verifyEmail');
     Route::get('/showAvatar', 'UserController@showAvatar');
@@ -28,7 +28,7 @@ Route::get('En', 'DiscussController@En');
 Route::resource('/comments', 'CommentController');
 
 // show email result
-Route::get('/email_show', function(){
+Route::get('/email_show', function () {
     $obj_user = \App\User::find(1);
     return new \App\Mail\UserEmailVerify($obj_user);
 });
@@ -42,30 +42,16 @@ Route::post('/logout', 'UserController@logout')->name('logout');
 
 // github登录
 Route::get('/github/login', 'UserController@thirdLogin');
-Route::get('/github/callback', 'UserController@thirdCallback')->name('github');
+Route::get('/github/callback', 'UserController@thirdCallback');
 
 // weibo login
 Route::get('/weibo/login', 'UserController@thirdLogin');
-Route::get('/weibo/callback', 'UserController@thirdCallback')->name('weibo');
+Route::get('/weibo/callback', 'UserController@thirdCallback');
 
 
-Route::get('/test/hello', function(){
-    $obj = \Request::route();
-    $route = $obj->getName();
-    dump($route);
-    dump($obj->uri);
-    dump(explode('/',$obj->uri)[0]);
-
-
-//    $obj_discussion = \App\Discuss::find(44);
-//    dd($obj_discussion->users->toArray());
-
-//    $result= $obj_discussion->users()->detach(3);
-//    dump($result);
-//    \App\User::find(50)->loveFavorites()->sync([1,2,3,4]);
-//
-//
-//    $result = \App\User::find(50)->loveFavorites;
-//    dump($result->first()->toArray());
+Route::get('/test', function () {
+   $discuss = \App\Discuss::find(47);
+   dump($discuss->toArray());
+   dump($discuss->lastUser->toArray());
 
 })->name('test');

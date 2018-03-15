@@ -5,15 +5,15 @@
             <div class="col-md-8 col-md-offset-2" role="main">
                 {!! Form::open(['url' => 'user/sign', 'method'=>'post']) !!}
                 <div class="form-group">
-                    {!! Form::label('email', '邮箱：') !!}
-                    {!! Form::email('email', null, ['class' => 'form-control']) !!}
+                    {!! Form::label('login', '账号：') !!}
+                    {!! Form::text('login', null, ['class' => 'form-control', 'placeholder' => '请填写邮箱或者用户名']) !!}
                 </div>
                 <div class="form-group">
                     {!! Form::label('password', '密码：') !!}
-                    {!! Form::password('password', ['class'=> 'form-control']) !!}
+                    {!! Form::password('password', ['class'=> 'form-control', 'placeholder' => '请填写密码']) !!}
                 </div>
                 <div class="form-group">
-                    <a href="https://www.codecasts.com/password/reset" class="text-muted">忘 记 密 码?</a>
+                    <a href="#" class="text-muted">忘 记 密 码?</a>
                     {!! Form::submit('登录', ['class' => 'form-control btn btn-info']) !!}
                 </div>
                 {!! Form::close() !!}

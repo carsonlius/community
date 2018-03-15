@@ -51,6 +51,11 @@ class User extends Authenticatable
         return $this->hasMany(Comment::class);
     }
 
+    public function lastUser()
+    {
+        return $this->belongsTo(User::class, 'last_user_id');
+    }
+
     // 收藏的帖子 多对多
     public function loveFavorites()
     {

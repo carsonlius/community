@@ -129,11 +129,15 @@ class UserController extends Controller
      */
     public function sign(UserLoginRequest $request)
     {
+        $login = trim($request->get('login'));
+        $field = filter_var($login, FILTER_VALIDATE_EMAIL) ? 'email' : 'name';
+
         $attempt = [
-            'email' => $request->get('email'),
+            $field => $login,
             'password' => $request->get('password'),
             'is_confirmed' => 1
         ];
+
         if (\Auth::attempt($attempt)) {
             // 跳转到登陆之前的页面
             if (\Session::has('redirect_url')) {
@@ -144,7 +148,13 @@ class UserController extends Controller
             return redirect('/');
         }
 
-        \Session::flash('user_login_failed', '密码不正确或者邮箱没有验证');
+        if (\App\User::where([$field => $login])->count() == 0) {
+            $message = '账号没有注册';
+        } else {
+            $message = '密码错误, 请检查密码后重新登录';
+        }
+
+        \Session::flash('user_login_failed', $message);
         return redirect('/login')->withInput();
     }
 
@@ -242,12 +252,18 @@ class UserController extends Controller
         $email_register = \App\User::where(compact('email'))->first();
 
         $web_user = \App\User::where(compact('social_id', 'social_type'))->first();
+
         if (!$web_user && !$email_register) {
+
+            //  determine name is unique
+            $name_unique = \App\User::where(['name' => $user->getNickname()])->count();
+            $name = $name_unique ? '请修改用户名' . time() : $user->getNickname();
+
             // register data  new one
             $params = [
-                'name' => $user->getNickname(),
+                'name' => $name,
                 'email' => ($email ?: mt_rand(100, 200) . 'suiji@163.com'),
-                'password' => bcrypt(str_random(16)),
+                'password' => bcrypt(str_random(8)),
                 'confirm_code' => bcrypt(str_random(32)),
                 'avatar' => $user->getAvatar(),
                 'is_confirmed' => 1,

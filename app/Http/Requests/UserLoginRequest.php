@@ -24,7 +24,7 @@ class UserLoginRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => 'required|email',
+            'login' => 'required',
             'password' => 'required'
         ];
     }
@@ -32,8 +32,7 @@ class UserLoginRequest extends FormRequest
     public function messages()
     {
         return [
-            'email.required' => '请填写邮箱',
-            'email.email' => '邮箱的格式不对',
+            'login.required' => '请填写账号',
             'password.required' => '请填写密码'
         ];
     }
