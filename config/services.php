@@ -39,5 +39,10 @@ return [
         'client_secret' => env('GITHUB_SECRET'),
         'redirect' => env('GITHUB_REDIRECT'),
     ],
+    'weibo' => [
+        'client_id' => env('WEIBO_CLIENT_ID'),
+        'client_secret' => env('WEIBO_SECRET'),
+        'redirect' => env('WEIBO_REDIRECT')
+    ]
 
 ];

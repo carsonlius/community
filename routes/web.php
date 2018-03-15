@@ -41,20 +41,31 @@ Route::get('/login', 'UserController@login')->name('login');
 Route::post('/logout', 'UserController@logout')->name('logout');
 
 // github登录
-Route::get('/github/login', 'UserController@githubLogin');
-Route::get('/github/callback', 'UserController@githubCallback');
+Route::get('/github/login', 'UserController@thirdLogin');
+Route::get('/github/callback', 'UserController@thirdCallback')->name('github');
 
-Route::get('/test', function(){
+// weibo login
+Route::get('/weibo/login', 'UserController@thirdLogin');
+Route::get('/weibo/callback', 'UserController@thirdCallback')->name('weibo');
+
+
+Route::get('/test/hello', function(){
+    $obj = \Request::route();
+    $route = $obj->getName();
+    dump($route);
+    dump($obj->uri);
+    dump(explode('/',$obj->uri)[0]);
+
+
 //    $obj_discussion = \App\Discuss::find(44);
 //    dd($obj_discussion->users->toArray());
 
-
 //    $result= $obj_discussion->users()->detach(3);
 //    dump($result);
-    \App\User::find(50)->loveFavorites()->detach(42);
+//    \App\User::find(50)->loveFavorites()->sync([1,2,3,4]);
+//
+//
+//    $result = \App\User::find(50)->loveFavorites;
+//    dump($result->first()->toArray());
 
-
-    $result = \App\User::find(50)->loveFavorites;
-    dump($result->first()->toArray());
-
-});
+})->name('test');

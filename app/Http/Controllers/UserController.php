@@ -212,31 +212,41 @@ class UserController extends Controller
      * github 跳转认证的入口
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
-    public function githubLogin()
+    public function thirdLogin()
     {
+        $uri = \Request::route()->uri;
+        $driver = explode("/", $uri)[0];
+
         $socialite = new SocialiteManager(config('services'));
-        return $socialite->driver('github')->redirect();
+        return $socialite->driver($driver)->redirect();
     }
 
     /**
      * github callback
      */
-    public function githubCallback()
+    public function thirdCallback()
     {
+        $uri = \Request::route()->uri;
+        $driver = explode("/", $uri)[0];
+
         // oauth
         $socialite = new SocialiteManager(config('services'));
-        $user = $socialite->driver('github')->user();
+        $user = $socialite->driver($driver)->user();
 
         // register for the first time or not base on social_type and social
         $social_type = strtolower($user->getProviderName());
         $social_id = $user->getId();
+        $email = $user->getEmail();
+
+        // determine this email is registered
+        $email_register = \App\User::where(compact('email'))->first();
 
         $web_user = \App\User::where(compact('social_id', 'social_type'))->first();
-        if (!$web_user) {
-            // register data
+        if (!$web_user && !$email_register) {
+            // register data  new one
             $params = [
                 'name' => $user->getNickname(),
-                'email' => $user->getEmail(),
+                'email' => ($email ?: mt_rand(100, 200) . 'suiji@163.com'),
                 'password' => bcrypt(str_random(16)),
                 'confirm_code' => bcrypt(str_random(32)),
                 'avatar' => $user->getAvatar(),
@@ -245,6 +255,9 @@ class UserController extends Controller
                 'social_type' => $social_type
             ];
             $web_user = \App\User::create($params);
+        } elseif ($email_register && !$web_user) {
+            // 邮箱已经被注册 但是这个第三方登录没有用过 则直接绑定
+            $email_register->update(compact('social_type', 'social_id'));
         }
 
         // login
