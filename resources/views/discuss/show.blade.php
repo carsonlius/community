@@ -39,7 +39,7 @@
                             </a>
                             @endif
                             <div class="media-bottom">
-                                <div class="social-share"  data-disabled="google,twitter,facebook,qq" data-wechat-qrcode-title="请打开微信扫一扫" data-description="Share.js - 一键分享到微博，QQ空间，腾讯微博，人人，豆瓣"></div>
+                                <div class="social-share"  data-disabled="google,twitter,facebook" data-wechat-qrcode-title="请打开微信扫一扫" data-description="Share.js - 一键分享到微博，QQ空间，腾讯微博，人人，豆瓣"></div>
                             </div>
                         </div>
                     </div>
